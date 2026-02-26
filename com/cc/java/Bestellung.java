@@ -67,20 +67,10 @@ public class Bestellung {
 
         } else {
 
-
-
-
-            System.out.println("Kunde möchte kein Getränk");
+            System.out.println("Hier ist Ihre Bestellung: " +  food);
         }
 
-
-
-
-
-
-
-
-
+        System.out.println("Vielen Dank, und Auf Wiedersehen!");
 
     }
 
