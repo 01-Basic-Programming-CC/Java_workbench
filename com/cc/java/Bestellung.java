@@ -46,8 +46,30 @@ public class Bestellung {
         System.out.println(flag);
 
         if (flag.equals("j")) {
-            System.out.println("Kunde möchte Getränk");
+
+            System.out.println("Cola(1) , Fanta(2), Sprite(3)?");
+            itemNumStr = System.console().readLine("Ihre Wahl? : ");
+
+            switch (itemNumStr)
+            {
+                case "1":
+                    drink = "Cola" ;
+                    break;
+                case "2":
+                    drink = "Fanta";
+                    break;
+                case "3":
+                    drink = "Sprite" ;
+                    break;
+            }
+
+            System.out.println("Hier ist Ihre Bestellung: " +  food + " und " +  drink);
+
         } else {
+
+
+
+
             System.out.println("Kunde möchte kein Getränk");
         }
 
