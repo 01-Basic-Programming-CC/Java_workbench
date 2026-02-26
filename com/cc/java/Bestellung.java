@@ -23,6 +23,22 @@ public class Bestellung {
         itemNumStr = System.console().readLine("Ihre Wahl? : ");
         System.out.println(itemNumStr);  // 1 oder 2 oder 3
 
+        // Zuordnung Zahl --> Burger
+        switch (itemNumStr)
+        {
+            case "1":
+                food = "Hamburger";
+                break;
+            case "2":
+                food = "Cheeseburger";
+                break;
+            case "3":
+                food = "Chilliburger";
+                break;
+        }
+
+        System.out.println(food);
+
 
 
 
